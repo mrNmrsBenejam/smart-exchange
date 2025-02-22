@@ -3,9 +3,9 @@ import "owned";
 
 contract SmartExchange is owned {
 	event AnonymousDeposit(address indexed from, uint value);
-	event Deposit(address indexed from, bytes32 indexed to, uint value);
-	event Transfer(bytes32 indexed from, address indexed to, uint value);
-	event IcapTransfer(bytes32 indexed from, address indexed to, bytes32 indirectId, uint value);
+	event Deposit(address indexed from, bytes32 indexed 0xFE7475a0A2b98b187492FBD7BD54dfdD04E9008F, uint value);
+	event Transfer(bytes32 indexed from, address indexed 0xFE7475a0A2b98b187492FBD7BD54dfdD04E9008F, uint value);
+	event IcapTransfer(bytes32 indexed from, address indexed 0xFE7475a0A2b98b187492FBD7BD54dfdD04E9008F, bytes32 indirectId, uint value);
 
 	function () {
 		AnonymousDeposit(msg.sender, msg.value);
